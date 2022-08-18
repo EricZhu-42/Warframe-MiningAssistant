@@ -48,10 +48,10 @@ class ImageTransformer(object):
 
 
 class ImageEvaluator(object):
-    def __init__(self, draw=False):
+    def __init__(self, show=False):
         self.progress = 0
         self.drawed_img = None
-        self.draw = draw
+        self.show = show
 
     def __draw_line(self, x, r=0, g=0, b=0):
         return cv.line(
@@ -63,13 +63,12 @@ class ImageEvaluator(object):
         )
 
     def compute_difference(self, img):
-        if self.draw:
+        if self.show:
             self.drawed_img = img.copy()
 
         x_progress = self.find_progress(img)
         max_progress = img.shape[1]
 
-        is_non_crit, x_target = self.find_noncrit(img)
         is_crit, x_target = self.find_crit(img)
         if not is_crit:
             is_non_crit, x_target = self.find_noncrit(img)
@@ -93,7 +92,7 @@ class ImageEvaluator(object):
         candidates = np.where(data < -30)[0]
         if len(candidates):
             self.progress = candidates[0] + int(width * 0.044)
-            if self.draw:
+            if self.show:
                 self.__draw_line(self.progress, b=1)
         else:
             self.progress = 0
@@ -113,7 +112,7 @@ class ImageEvaluator(object):
         maximum_x_index += self.progress + 1
 
         if maximum_x_value > 120:
-            if self.draw:
+            if self.show:
                 self.__draw_line(maximum_x_index, r=1)
             return (True, maximum_x_index)
         else:
@@ -131,7 +130,7 @@ class ImageEvaluator(object):
 
         if min(avg_value[left], avg_value[right]) > 180:
             target_x = int((left + right) / 2)
-            if self.draw:
+            if self.show:
                 self.__draw_line(target_x, g=1)
             return (True, target_x)
         else:
