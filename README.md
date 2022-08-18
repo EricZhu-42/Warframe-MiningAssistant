@@ -2,13 +2,13 @@
 
 **Semi**-automated [mining](https://warframe.fandom.com/wiki/Mining) assistant for the video game [Warframe](https://en.wikipedia.org/wiki/Warframe), which aims at stopping the mining process (i.e., releasing`LMB`) at the most accurate timing.
 
-> **Note:** use of any unauthorized third-party tool in Warframe could be considered as a **violation of [EULA(2.f.)](https://www.warframe.com/eula)**.
+> **Note:** using any unauthorized third-party tool in Warframe could be considered as a violation of [EULA(2.f.)](https://www.warframe.com/eula).
 
 ## Demo ([demo gif](https://github.com/EricZhu-42/Warframe-MiningAssistant/blob/main/misc/example.gif))
 
 <img src="./misc/example.gif" style="zoom:80%;" />
 
-## How it works ? ([illustrative png](https://github.com/EricZhu-42/Warframe-MiningAssistant/blob/main/misc/framework.png))
+## How it works? ([illustrative png](https://github.com/EricZhu-42/Warframe-MiningAssistant/blob/main/misc/framework.png))
 
 ![](./misc/framework.png)
 
@@ -21,6 +21,6 @@
 ## Usage
 
 ```bash
-python main.py [-h] [-s]
+python main.py [-h] [--show]
 ```
 
