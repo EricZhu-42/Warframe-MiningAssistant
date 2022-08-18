@@ -4,11 +4,11 @@
 
 > **Note:** use of any unauthorized third-party tool in Warframe could be considered as a **violation of [EULA(2.f.)](https://www.warframe.com/eula)**.
 
-## Demo ([demo gif link](https://github.com/EricZhu-42/Warframe-MiningAssistant/blob/main/misc/example.gif))
+## Demo ([demo gif](https://github.com/EricZhu-42/Warframe-MiningAssistant/blob/main/misc/example.gif))
 
 <img src="./misc/example.gif" style="zoom:80%;" />
 
-## How it works ? ([illustrative png link](https://github.com/EricZhu-42/Warframe-MiningAssistant/blob/main/misc/framework.png))
+## How it works ? ([illustrative png](https://github.com/EricZhu-42/Warframe-MiningAssistant/blob/main/misc/framework.png))
 
 ![](./misc/framework.png)
 
