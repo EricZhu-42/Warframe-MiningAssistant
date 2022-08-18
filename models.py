@@ -1,7 +1,6 @@
 import cv2 as cv
 import imutils
 import numpy as np
-from matplotlib import pyplot as plt
 
 from utils import cumulative_diff, moving_average
 
