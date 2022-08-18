@@ -9,7 +9,7 @@ from models import ImageEvaluator, ImageTransformer
 
 draw = False
 
-transformer = ImageTransformer()
+transformer = ImageTransformer(width=2560, height=1440)
 evaluator = ImageEvaluator(draw=draw)
 monitor = transformer.monitor
 controller = Controller()
